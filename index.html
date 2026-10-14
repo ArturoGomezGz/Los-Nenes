@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Los Nenes — Mini súper y envíos de dinero</title>
-  <meta name="description" content="Los Nenes: mini súper de la comunidad con envíos de dinero a México, tarjeta de socio y registro de envíos en autoservicio.">
+  <meta name="description" content="Los Nenes: envíos de dinero a México con autoservicio en las sucursales de Hendersonville y Asheville.">
   <meta name="theme-color" content="#FF4B44">
   <meta property="og:title" content="Los Nenes — Mini súper y envíos de dinero">
   <meta property="og:description" content="Tu mini súper de confianza. Envía dinero a México de forma segura y rápida.">
@@ -70,7 +70,9 @@
     .card .ico { width: 44px; height: 44px; border-radius: 12px; background: var(--brand-soft); display: grid; place-items: center; font-size: 1.4rem; margin-bottom: 14px; }
     .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
     .card p { margin: 0 0 14px; color: var(--muted); }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; }
     .card a.link { font-weight: 700; color: var(--brand-ink); text-decoration: none; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; }
     .card a.link:hover { text-decoration: underline; }
     .feature { border-color: var(--brand); }
     .band { background: var(--brand-soft); border-radius: 28px; padding: 36px 24px; text-align: center; }
@@ -92,7 +94,7 @@
       <nav>
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
-        <a class="btn" href="https://portalstore.losnenes.app">Envía dinero</a>
+        <a class="btn" href="#servicios">Envía dinero</a>
       </nav>
     </header>
 
@@ -102,7 +104,7 @@
           <h1>Tu mini súper de confianza, <span>y tu envío a México</span> en el mismo lugar.</h1>
           <p>Compra lo que necesitas y manda dinero a tu familia de forma segura, rápida y con atención de gente que te conoce.</p>
           <div class="cta">
-            <a class="btn" href="https://portalstore.losnenes.app">Registrar mi envío</a>
+            <a class="btn" href="#servicios">Registrar mi envío</a>
             <a class="btn ghost" href="#servicios">Ver servicios</a>
           </div>
         </div>
@@ -111,40 +113,30 @@
 
       <section id="servicios">
         <h2>Servicios</h2>
-        <p class="lead">Todo lo que ofrecemos en Los Nenes.</p>
+        <p class="lead">Elige tu sucursal para registrar tu envío o entrar al portal.</p>
         <div class="grid cols">
           <article class="card feature">
-            <div class="ico" aria-hidden="true">💸</div>
-            <h3>Envíos de dinero a México</h3>
-            <p>Manda dinero de Estados Unidos a México con registro y seguimiento de cada operación. Paga en mostrador.</p>
-            <a class="link" href="https://portalstore.losnenes.app">Ir al autoservicio →</a>
+            <div class="ico" aria-hidden="true">📍</div>
+            <h3>Hendersonville</h3>
+            <p>Registra tu envío de dinero a México desde tu teléfono y termina el pago en caja, o entra al portal de la sucursal.</p>
+            <div class="links">
+              <a class="btn" href="https://portal.hendersonville.losnenes.app/autoservicio">Autoservicio</a>
+              <a class="btn ghost" href="https://portal.hendersonville.losnenes.app">Portal</a>
+            </div>
           </article>
-          <article class="card">
-            <div class="ico" aria-hidden="true">📲</div>
-            <h3>Autoservicio</h3>
-            <p>Captura tu envío desde tu teléfono antes de llegar a caja y ahorra tiempo en la fila.</p>
-            <a class="link" href="https://portalstore.losnenes.app">Empezar →</a>
-          </article>
-          <article class="card">
-            <div class="ico" aria-hidden="true">🛒</div>
-            <h3>Mini súper</h3>
-            <p>Productos de uso diario y los favoritos de la comunidad, cerca de ti.</p>
-          </article>
-          <article class="card">
-            <div class="ico" aria-hidden="true">🪪</div>
-            <h3>Tarjeta de socio</h3>
-            <p>Tu código QR personal para identificarte rápido cada vez que nos visitas.</p>
+          <article class="card feature">
+            <div class="ico" aria-hidden="true">📍</div>
+            <h3>Asheville</h3>
+            <p>Registra tu envío de dinero a México desde tu teléfono y termina el pago en caja, o entra al portal de la sucursal.</p>
+            <div class="links">
+              <a class="btn" href="https://portal.asheville.losnenes.app/autoservicio">Autoservicio</a>
+              <a class="btn ghost" href="https://portal.asheville.losnenes.app">Portal</a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section>
-        <div class="band">
-          <h2>¿Listo para enviar?</h2>
-          <p>Registra tu envío en línea y termina el pago en caja. Es rápido y queda todo registrado.</p>
-          <a class="btn" href="https://portalstore.losnenes.app">Registrar mi envío</a>
-        </div>
-      </section>
+      
 
       <section id="contacto">
         <h2>Contacto</h2>
@@ -156,7 +148,7 @@
     <footer>
       <div class="row">
         <span>© <span id="y">2026</span> Los Nenes · Mini Súper</span>
-        <a href="https://portalstore.losnenes.app">Portal de envíos</a>
+        <a href="#servicios">Sucursales</a>
       </div>
     </footer>
   </div>
