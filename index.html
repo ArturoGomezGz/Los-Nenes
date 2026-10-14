@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Los Nenes — Mini súper y envíos de dinero</title>
+  <meta name="description" content="Los Nenes: mini súper de la comunidad con envíos de dinero a México, tarjeta de socio y registro de envíos en autoservicio.">
+  <meta name="theme-color" content="#FF4B44">
+  <meta property="og:title" content="Los Nenes — Mini súper y envíos de dinero">
+  <meta property="og:description" content="Tu mini súper de confianza. Envía dinero a México de forma segura y rápida.">
+  <meta property="og:image" content="/brand/logo-512.png">
+  <link rel="icon" href="/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #FF4B44;
+      --brand-ink: #D93A33;
+      --brand-soft: #FFECEB;
+      --ink: #292524;
+      --muted: #57534e;
+      --line: #e7e5e4;
+      --bg: #fafaf9;
+      --card: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand-ink: #ff7770;
+        --brand-soft: #3a1c1b;
+        --ink: #fafaf9;
+        --muted: #d6d3d1;
+        --line: #44403c;
+        --bg: #1c1917;
+        --card: #292524;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: "Plus Jakarta Sans", system-ui, sans-serif; line-height: 1.55;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+    header.top { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; text-decoration: none; font-size: 1.15rem; }
+    .brand img { width: 40px; height: 40px; border-radius: 10px; }
+    nav a { margin-left: 18px; text-decoration: none; font-weight: 500; color: var(--muted); }
+    nav a:hover { color: var(--ink); }
+    .btn {
+      display: inline-block; padding: 12px 22px; border-radius: 999px; font-weight: 700;
+      text-decoration: none; background: var(--ink); color: var(--bg); border: 2px solid var(--ink);
+    }
+    .btn.ghost { background: transparent; color: var(--ink); }
+    .btn:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
+    .hero { display: grid; gap: 32px; align-items: center; padding: 40px 0 64px; }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; margin: 0 0 16px; letter-spacing: -0.02em; }
+    .hero h1 span { color: var(--brand-ink); }
+    .hero p { font-size: 1.1rem; color: var(--muted); max-width: 46ch; margin: 0 0 24px; }
+    .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero .art { background: var(--brand); border-radius: 28px; padding: 28px; display: grid; place-items: center; }
+    .hero .art img { width: min(100%, 320px); height: auto; }
+    section { padding: 56px 0; }
+    h2 { font-size: clamp(1.5rem, 4vw, 2.1rem); margin: 0 0 8px; letter-spacing: -0.01em; }
+    .lead { color: var(--muted); margin: 0 0 32px; max-width: 56ch; }
+    .grid { display: grid; gap: 16px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; }
+    .card .ico { width: 44px; height: 44px; border-radius: 12px; background: var(--brand-soft); display: grid; place-items: center; font-size: 1.4rem; margin-bottom: 14px; }
+    .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+    .card p { margin: 0 0 14px; color: var(--muted); }
+    .card a.link { font-weight: 700; color: var(--brand-ink); text-decoration: none; }
+    .card a.link:hover { text-decoration: underline; }
+    .feature { border-color: var(--brand); }
+    .band { background: var(--brand-soft); border-radius: 28px; padding: 36px 24px; text-align: center; }
+    .band p { margin: 0 auto 20px; max-width: 52ch; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .95rem; }
+    footer .row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; }
+    footer a { font-weight: 500; }
+    @media (min-width: 760px) {
+      .hero { grid-template-columns: 1.2fr 1fr; }
+      .grid.cols { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) { nav a:not(.btn) { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/"><img src="/brand/mark.png" alt="" width="40" height="40">Los Nenes</a>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn" href="https://portalstore.losnenes.app">Envía dinero</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div>
+          <h1>Tu mini súper de confianza, <span>y tu envío a México</span> en el mismo lugar.</h1>
+          <p>Compra lo que necesitas y manda dinero a tu familia de forma segura, rápida y con atención de gente que te conoce.</p>
+          <div class="cta">
+            <a class="btn" href="https://portalstore.losnenes.app">Registrar mi envío</a>
+            <a class="btn ghost" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <div class="art"><img src="/brand/logo-512.png" alt="Los Nenes Mini Súper" width="320" height="301"></div>
+      </div>
+
+      <section id="servicios">
+        <h2>Servicios</h2>
+        <p class="lead">Todo lo que ofrecemos en Los Nenes.</p>
+        <div class="grid cols">
+          <article class="card feature">
+            <div class="ico" aria-hidden="true">💸</div>
+            <h3>Envíos de dinero a México</h3>
+            <p>Manda dinero de Estados Unidos a México con registro y seguimiento de cada operación. Paga en mostrador.</p>
+            <a class="link" href="https://portalstore.losnenes.app">Ir al autoservicio →</a>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true">📲</div>
+            <h3>Autoservicio</h3>
+            <p>Captura tu envío desde tu teléfono antes de llegar a caja y ahorra tiempo en la fila.</p>
+            <a class="link" href="https://portalstore.losnenes.app">Empezar →</a>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true">🛒</div>
+            <h3>Mini súper</h3>
+            <p>Productos de uso diario y los favoritos de la comunidad, cerca de ti.</p>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true">🪪</div>
+            <h3>Tarjeta de socio</h3>
+            <p>Tu código QR personal para identificarte rápido cada vez que nos visitas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="band">
+          <h2>¿Listo para enviar?</h2>
+          <p>Registra tu envío en línea y termina el pago en caja. Es rápido y queda todo registrado.</p>
+          <a class="btn" href="https://portalstore.losnenes.app">Registrar mi envío</a>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p class="lead">Síguenos y escríbenos para dudas, horarios y promociones.</p>
+        <a class="btn ghost" href="https://www.instagram.com/tienda_los_nenes/" rel="noopener" target="_blank">@tienda_los_nenes en Instagram</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="row">
+        <span>© <span id="y">2026</span> Los Nenes · Mini Súper</span>
+        <a href="https://portalstore.losnenes.app">Portal de envíos</a>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
